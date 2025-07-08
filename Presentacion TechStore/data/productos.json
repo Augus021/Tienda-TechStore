@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "nombre": "Auriculares JBL Tune 720BT",
+    "descripcion": "Auriculares Bluetooth con hasta 76 h de batería, conexión multipunto y diseño plegable.",
+    "precio": 59999,
+    "categoria": "auriculares",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_816116-MLU73465844524_122023-F.webp"
+  },
+  {
+    "id": 2,
+    "nombre": "Auriculares Sony WH-CH520",
+    "descripcion": "Bluetooth 5.2, 50 h de batería, sonido equilibrado. Ligeros y cómodos.",
+    "precio": 69999,
+    "categoria": "auriculares",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_972200-MLU74088420395_012024-F.webp"
+  },
+  {
+    "id": 3,
+    "nombre": "Smartwatch Xiaomi Redmi Watch 5 Active",
+    "descripcion": "Pantalla AMOLED, +140 modos deportivos, batería hasta 18 días.",
+    "precio": 44999,
+    "categoria": "smartwatches",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_681037-MLA79418002635_092024-F.webp"
+  },
+  {
+    "id": 4,
+    "nombre": "Smartwatch Samsung Galaxy Watch7 40mm",
+    "descripcion": "Pantalla Super AMOLED, GPS, batería de hasta 24 horas.",
+    "precio": 317590,
+    "categoria": "smartwatches",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_767559-MLA79627216314_102024-F.webp"
+  },
+  {
+    "id": 5,
+    "nombre": "Samsung Galaxy A15 128GB",
+    "descripcion": "Pantalla Super AMOLED, triple cámara, 5000mAh, 4GB RAM.",
+    "precio": 246999,
+    "categoria": "smartphones",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_633374-MLA82692302836_032025-F.webp"
+  },
+  {
+    "id": 6,
+    "nombre": "Apple iPhone 13 128GB",
+    "descripcion": "Pantalla XDR 6.1\", chip A15 Bionic, cámaras 12MP, iOS.",
+    "precio": 1489990,
+    "categoria": "smartphones",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_973345-MLA47781591382_102021-O.webp"
+  }
+]

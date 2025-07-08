@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #b69d9d;
+  color: #333;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: relative;
+  height: 430px;
+  background: url("https://trafaret-decor.art/sites/default/files/2022-12/%D0%93%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F%20%284%29.jpg") center/cover no-repeat;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+header:hover {
+  transform: scale(1.05);
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+header h1,
+header img.logo,
+nav {
+  position: relative;
+  z-index: 1;
+}
+
+header img.logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+nav {
+  margin-top: 3rem;
+}
+
+nav h2 {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  color: #b3b3b3;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+nav ul a:hover {
+  transform: scale(1.9);
+}
+
+nav a img {
+  width: 90px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0.5rem auto 0.7rem;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -150px;
+  height: 100%;
+  width: 180px;
+  background-color: #2c3e50;
+  z-index: 1000;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: left 0.3s ease;
+}
+
+.sidebar:hover {
+  left: 0;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  width: 100%;
+}
+
+.sidebar nav ul li {
+  width: 100%;
+  text-align: center;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 10px 0;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.sidebar nav ul li a:hover {
+  background-color: #34495e;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+button {
+  background-color: #2d8f2d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #256b25;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+.categoria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.producto {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  border: 2px solid #052444;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  background-color: #183b5a36;
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.producto h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.producto p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Lista de productos en modal o sección lista */
+
+.lista-productos {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #0e1a2b;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.lista-productos h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #00cfff;
+}
+
+.categoria-lista {
+  margin-bottom: 30px;
+}
+
+.categoria-lista h3 {
+  font-size: 1.4rem;
+  color: #00cfff;
+  margin-bottom: 10px;
+}
+
+.categoria-lista ul {
+  list-style: none;
+  padding: 0;
+}
+
+.categoria-lista ul li {
+  background-color: #15283c;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-left: 5px solid #00cfff;
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #fff;
+}
+
+.categoria-lista ul li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0, 207, 255, 0.3);
+}
+
+.producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #102135;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.info-producto {
+  flex: 1;
+  margin-right: 12px;
+}
+
+/* Botón eliminar */
+
+.btn-eliminar {
+  background-color: #dc3545;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.btn-eliminar:hover {
+  background-color: #c82333;
+}
+
+/* Modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  inset: 0;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-contenido {
+  background-color: white;
+  margin: 5% auto;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.modal input,
+.modal textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.modal button {
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.modal button:hover {
+  background-color: #256b25;
+}
+
